@@ -140,4 +140,7 @@ resetBtn.addEventListener("click", (e) => {
   });
   countInput.value = "";
   customInput.value = "";
+  customInput.style.border = "none";
+  billBox.classList.remove("active");
+  countBox.classList.remove("active");
 });
