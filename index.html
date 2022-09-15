@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator App</title>
+    <link rel="icon" href="img/favicon-32x32.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="d-flex flex-column pt-5 pt-md-0">
+        <div class="text-center mb-4 mb-md-5">
+          <a href="#" class="logo">
+            <img src="img/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <form class="p-4 p-md-5 pb-0">
+                <div class="mb-4 mb-md-5">
+                  <label>Bill</label>
+                  <div
+                    class="d-flex justify-content-between align-items-center bill-box mb-1"
+                  >
+                    <div class="image-wrapper">
+                      <img src="img/icon-dollar.svg" alt="dollar icon" />
+                    </div>
+                    <input type="text" id="bill" placeholder="0" />
+                  </div>
+                  <div class="float-end">
+                    <p class="error-message"></p>
+                  </div>
+                </div>
+                <div class="mb-4 mb-md-5">
+                  <label>Select Tip %</label>
+                  <div class="grid-container mb-1">
+                    <button type="button" class="tip-btn">5%</button>
+                    <button type="button" class="tip-btn">10%</button>
+                    <button type="button" class="tip-btn">15%</button>
+                    <button type="button" class="tip-btn">25%</button>
+                    <button type="button" class="tip-btn">50%</button>
+                    <input type="text" id="custom" placeholder="Custom" />
+                  </div>
+                  <div class="float-end">
+                    <p class="error-message"></p>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <label>Number of People</label>
+                    <p class="error-message"></p>
+                  </div>
+
+                  <div
+                    class="count-box d-flex justify-content-between align-items-center"
+                  >
+                    <div class="image-wrapper">
+                      <img src="img/icon-person.svg" alt="person icon" />
+                    </div>
+                    <input type="text" id="count" placeholder="0" />
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="p-4 ps-md-0 pe-md-3 py-md-5">
+                <div class="box p-4 p-md-5 h-100">
+                  <div class="d-flex flex-column">
+                    <div class="total-box mb-5">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-5"
+                      >
+                        <div class="amount-box">
+                          <h2 class="sub-title">Tip Amount</h2>
+                          <span class="text">/ person</span>
+                        </div>
+                        <div class="result-box">
+                          <p class="result">$0.00</p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-5"
+                      >
+                        <div class="amount-box">
+                          <h2 class="sub-title">Total</h2>
+                          <span class="text">/ person</span>
+                        </div>
+                        <div class="result-box">
+                          <p class="result">$0.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reset-btn-box">
+                      <button type="button" class="reset-btn">Reset</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
